@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "title";
+    src: url("../asset/PPEiko-Medium.otf") format("opentype");
+  }
+  
+@font-face {
+    font-family: "text";
+    src: url("../asset/PPNeueMontreal-Medium.otf") format("opentype");
+  }
+  
+:root {
+    --title: "title", sans-serif;
+    --text: "text", sans-serif;
+    --blue-color: #0B1952;
+    --biru-muda: #113C92;
+    --white-color: #f7f7f7;
+    --kuning-color: #FFDE00;
+}
+
+body{
+    background-color: #030304;
+}
+
+.hero h1{
+    text-align: center;
+    padding-top: 3.7em;
+    font-family: var(--title);
+    color: #f7f7f7;
+    font-size: 100px;
+    font-weight: 600;
+}
+.hero h1 span {
+    color: #846265;
+}
+
+.hero h3{
+    text-align: center;
+    color: #f7f7f7;
+    padding-top: 0.5em;
+
+}
+.bg{
+    background-color: #030304;
+}
+
+.nav .hvr{
+    margin-bottom: 7px;
+    font-family: var(--text);
+    font-size: 18px;
+}
+
+.nav .hvr:hover{
+    border-bottom: 1px solid #846265;
+    transition: border-bottom 0.1s ease;
+}
+
+.logo p{
+    color: var(--white-color);
+    font-family: var(--title);
+}
+
+.logo span{
+    color: #846265;
+}
+
+.hero{
+    background-image: url('../asset/bg1.jpg');
+    background-size: cover;
+    height: 95vh;
+    filter: brightness(0.8);
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+     mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+}
+
+.text{
+    text-align: center;
+    color: var(--white-color);
+    font-family: var(--title);
+    margin-top: 4em;
+
+}
+.gambar{
+    background-image: url('../asset/bg2.jpg');
+    background-size: cover;
+    height: 50vh;
+    border-radius: 1em;
+}
+
+.about {
+    color: var(--white-color);
+    font-family: var(--text);
+    text-align: justify;
+    margin-left: 3em;
+}

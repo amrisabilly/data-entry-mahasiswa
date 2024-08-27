@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "title";
+    src: url("../asset/PPEiko-Medium.otf") format("opentype");
+  }
+  
+@font-face {
+    font-family: "text";
+    src: url("../asset/PPNeueMontreal-Medium.otf") format("opentype");
+  }
+  
+:root {
+    --title: "title", sans-serif;
+    --text: "text", sans-serif;
+    --blue-color: #0B1952;
+    --biru-muda: #113C92;
+    --white-color: #f7f7f7;
+    --kuning-color: #FFDE00;
+}
+
+body{
+    background-color: var(--white-color);
+    height: 98vh;
+}
+
+.input {
+    margin: 2.5em 0em 0em 3em;
+    padding-left: 2em;
+}
+  
+.input label {
+    color: var(--white-color);
+}
+  
+.input .inputt {
+    all: unset;
+    width: 80%;
+    height: 3em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    color: var(--blue-color);
+    background-color: var(--white-color);
+    border: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+  
+  .input input:focus {
+    border: 3px solid var(--white-color);
+  }
+
+  .button button {
+    all: unset;
+    background-color: #846265;
+    width: 17em;
+    border-radius: 0.5em;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-left: 6em;
+    margin-bottom: 2.5em;
+    font-family: var(--text);
+    height: 2.5em;
+  }
+  
+  .button button:hover {
+    background-color: var(--white-color);
+    transition: 0.5s ease;
+  }
+  
+  .button p {
+    margin-top: 1em;
+    color: var(--white-color);
+  }

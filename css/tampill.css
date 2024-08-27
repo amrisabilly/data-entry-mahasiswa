@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "title";
+    src: url("../asset/PPEiko-Medium.otf") format("opentype");
+  }
+  
+@font-face {
+    font-family: "text";
+    src: url("../asset/PPNeueMontreal-Medium.otf") format("opentype");
+  }
+  
+:root {
+    --title: "title", sans-serif;
+    --text: "text", sans-serif;
+    --blue-color: #0B1952;
+    --biru-muda: #113C92;
+    --white-color: #f7f7f7;
+    --kuning-color: #846265;
+}
+
+.bg{
+    background-color: #030304;
+}
+
+.nav .hvr{
+    margin-bottom: 7px;
+    font-family: var(--text);
+    font-size: 18px;
+}
+
+.nav .hvr:hover{
+    border-bottom: 1px solid #846265;
+    transition: border-bottom 0.1s ease;
+}
+
+.logo p{
+    color: var(--white-color);
+    font-family: var(--title);
+}
+
+.logo span{
+    color: var(--kuning-color);
+}
+
+body{
+    background-color: var(--blue-color);
+    height: 98vh;
+}
